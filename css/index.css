@@ -1,0 +1,52 @@
+
+/* Body styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body {
+    background-color: white;
+    font-family: 'Trebuchet MS', 'Gill Sans MT', Calibri, 'Gill Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    
+}
+
+/* Page Title styling */
+.page-title {
+    position: relative;
+    width: 100%; /* Ensure the page-title div covers the entire width */
+    margin:0;
+    padding :0;
+}
+.header-img{
+    height: 20vh; /* 25% of the page height */
+    object-fit: cover; /* Ensures the image covers the entire width */
+    width: 200vh;
+    position: relative;
+}
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 32px;
+    text-align:left;
+   
+}
+.colour-change{
+    color: #FA6862;
+}
+/* Spacing between the header and details section */
+.section-spacing{
+    margin-top: 50px;
+}
+ 
+/* Spacing between the details section and footer */
+.footer-spacing{
+    margin-top:200px;
+}
+
