@@ -50,3 +50,35 @@ body {
     margin-top:200px;
 }
 
+.accordion-item {
+    margin-bottom: 1rem; /* Adds some space between accordion items vertically */
+  }
+
+  .accordion-button img {
+    max-width: 100%;
+    height: auto;
+  }
+  .accordion-button::after {
+    display: none;
+  }
+
+
+   /* Container for the image and text */
+   .image-container {
+    position: relative;
+    text-align: left;
+    color: grey;
+  }
+
+
+  .accordion-body a {
+    display: block;  /* Each link on a new line */
+    padding: 5px 0;  /* Spacing between links */
+    color: #007bff;  /* Bootstrap's default link color */
+    text-decoration: none;  /* Remove underline */
+  }
+
+  /* Optional: Add hover effect for links */
+  .accordion-body a:hover {
+    text-decoration: underline;  /* Add underline on hover */
+  }
