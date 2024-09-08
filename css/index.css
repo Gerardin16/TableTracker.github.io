@@ -1,84 +1,96 @@
-
 /* Body styling */
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
 body {
-    background-color: white;
-    font-family: 'Trebuchet MS', 'Gill Sans MT', Calibri, 'Gill Sans', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: white;
+  font-family: 'Trebuchet MS', 'Gill Sans MT', Calibri, 'Gill Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 /* Page Title styling */
 .page-title {
-    position: relative;
-    width: 100%; /* Ensure the page-title div covers the entire width */
-    margin:0;
-    padding :0;
-}
-.header-img{
-    height: 20vh; /* 25% of the page height */
-    object-fit: cover; /* Ensures the image covers the entire width */
-    width: 200vh;
-    position: relative;
-}
-.header-text{
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 32px;
-    text-align:left;
-   
-}
-.colour-change{
-    color: #FA6862;
-}
-/* Spacing between the header and details section */
-.section-spacing{
-    margin-top: 50px;
-}
- 
-/* Spacing between the details section and footer */
-.footer-spacing{
-    margin-top:200px;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
+.header-img {
+  height: 20vh; /* 20% of the page height */
+  object-fit: cover; /* Ensures the image covers the entire width */
+  width: 100%;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* Spacing between sections */
+.section-spacing {
+  margin-top: 50px;
+}
+
+.footer-spacing {
+  margin-top: 200px;
+}
+
+/* Accordion styling */
 .accordion-item {
-    margin-bottom: 1rem; /* Adds some space between accordion items vertically */
-  }
+  margin-bottom: 1rem; /* Adds space between accordion items vertically */
+}
 
-  .accordion-button img {
-    max-width: 100%;
-    height: auto;
-  }
-  .accordion-button::after {
-    display: none;
-  }
+.accordion-button img {
+  max-width: 100%;
+  height: auto;
+}
 
+.accordion-button::after {
+  display: none; /* Remove default accordion icon */
+}
 
-   /* Container for the image and text */
-   .image-container {
-    position: relative;
-    text-align: left;
-    color: grey;
-  }
+.accordion-flush .accordion-item,
+.accordion-flush .accordion-header,
+.accordion-flush .accordion-button,
+.accordion-flush .accordion-collapse {
+  background-color: transparent;
+  border: none; /* Remove any borders */
+}
 
+/* Ensure text remains readable */
+.accordion-body {
+  color: inherit;
+}
 
-  .accordion-body a {
-    display: block;  /* Each link on a new line */
-    padding: 5px 0;  /* Spacing between links */
-    color: #007bff;  /* Bootstrap's default link color */
-    text-decoration: none;  /* Remove underline */
-  }
+/* Image container styling */
+.image-container {
+  position: relative;
+  text-align: left;
+  color: grey;
+}
 
-  /* Optional: Add hover effect for links */
-  .accordion-body a:hover {
-    text-decoration: underline;  /* Add underline on hover */
-  }
+/* Accordion link styling */
+.accordion-body a {
+  display: block;  /* Each link on a new line */
+  padding: 5px 0;  /* Spacing between links */
+  color: #007bff;  /* Bootstrap's default link color */
+  text-decoration: none;  /* Remove underline */
+}
+
+/* Optional: Add hover effect for links */
+.accordion-body a:hover {
+  text-decoration: underline;  /* Add underline on hover */
+}
+
+/* Accordion button focus styling */
+.accordion-button:focus {
+  outline: none; /* Removes the default focus outline */
+  box-shadow: none; /* Removes any shadow that may be present */
+}
